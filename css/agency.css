@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+@font-face { font-family: Bimini; src: url('../fonts/Bimini.TTF'); }
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -174,8 +176,13 @@ fieldset[disabled] .btn-xl.active {
     background-color: #222;
 }
 
+.marlett-securconfort-icon {
+    font-family: "Marlett","Helvetica Neue",Helvetica,Arial,cursive;
+    color: #FFFFFF;
+}
+
 .navbar-default .navbar-brand {
-    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+    font-family: "Bimini","Helvetica Neue",Helvetica,Arial,cursive;
     color: #FFFFFF;
 }
 
@@ -493,7 +500,7 @@ section h3.section-subheading {
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #F44336;
+    /*background-color: #F44336; */
 }
 
 .timeline>li .timeline-image h4 {
