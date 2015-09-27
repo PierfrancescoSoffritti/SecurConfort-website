@@ -81,7 +81,7 @@
                         <a class="page-scroll" href="#details">Dettagli prodotto</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">I componenti</a>
+                        <a class="page-scroll" href="#products">I componenti</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#FAQ">FAQ</a>
@@ -133,7 +133,7 @@
     </section>
 
     <!-- components Grid Section -->
-    <section id="portfolio" class="bg-light-gray">
+    <section id="products" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -159,17 +159,17 @@
                 var components = ["Centrali", "Sirene", "Rivelatori", "Radiocomandi e tastiere", "Trasmettitori telefonici", "Ricevitori radio", "Accessori"];
                 for(var indx in components) {
                     rootElement.innerHTML += "" +
-                     "<div class='col-md-3 col-sm-4 portfolio-item col-xs-6 portfolio-item'>" +
-                        //"<a href='#" +components[indx].replace(/\s+/g, '') +"Modal' class='portfolio-link' data-toggle='modal'>" +
-                        "<a href='modals/" +components[indx].replace(/\s+/g, '') +"Modal.html'' class='portfolio-link'>" +
-                            "<div class='portfolio-hover'>" +
-                                "<div class='portfolio-hover-content'>" +
+                     "<div class='col-md-3 col-sm-4 products-item col-xs-6 products-item'>" +
+                        //"<a href='#" +components[indx].replace(/\s+/g, '') +"Modal' class='products-link' data-toggle='modal'>" +
+                        "<a href='modals/" +components[indx].replace(/\s+/g, '') +"Modal.html'' class='products-link'>" +
+                            "<div class='products-hover'>" +
+                                "<div class='products-hover-content'>" +
                                     "<i class='fa fa-plus fa-3x'></i>" +
                                 "</div>" +
                             "</div>" +
-                            "<img src='img/portfolio/sirena_pimped.jpg' class='img-responsive' alt=''>" +
+                            "<img src='img/products/sirena_pimped.jpg' class='img-responsive' alt=''>" +
                         "</a>" +
-                        "<div class='portfolio-caption'>" +
+                        "<div class='products-caption'>" +
                             "<h4>" +components[indx] +"</h4>" +
                             "<p class='text-muted'></p>" +
                         "</div>" +
