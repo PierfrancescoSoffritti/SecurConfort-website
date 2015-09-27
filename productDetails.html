@@ -151,31 +151,216 @@
                 </div>
             </div>
             <br/>
-            <div id="componentsRow" class="row">
+            
+            <div id="componentsRow" class="row"/>
 
-                <script>
-                    var rootElement = document.getElementById("componentsRow");
-                    var components = ["Centrali", "Sirene", "Rivelatori", "Radiocomandi", "Tastiere", "Trasmettitori telefonici", "Accessori", "Ripetitori", "Segnalatori led", "Ricevitori radio"];
-                    for(var indx in components) {
-                        rootElement.innerHTML += "" +
-                         "<div class='col-md-3 col-sm-4 portfolio-item col-xs-6 portfolio-item'>" +
-                            "<a href='#" +components[indx] +"Modal' class='portfolio-link' data-toggle='modal'>" +
-                                "<div class='portfolio-hover'>" +
-                                    "<div class='portfolio-hover-content'>" +
-                                        "<i class='fa fa-plus fa-3x'></i>" +
-                                    "</div>" +
+            <script>
+                var rootElement = document.getElementById("componentsRow");
+                var components = ["Centrali", "Sirene", "Rivelatori", "Radiocomandi e tastiere", "Trasmettitori telefonici", "Ricevitori radio", "Accessori"];
+                for(var indx in components) {
+                    rootElement.innerHTML += "" +
+                     "<div class='col-md-3 col-sm-4 portfolio-item col-xs-6 portfolio-item'>" +
+                        "<a href='#" +components[indx].replace(/\s+/g, '') +"Modal' class='portfolio-link' data-toggle='modal'>" +
+                            "<div class='portfolio-hover'>" +
+                                "<div class='portfolio-hover-content'>" +
+                                    "<i class='fa fa-plus fa-3x'></i>" +
                                 "</div>" +
-                                "<img src='img/portfolio/sirena_pimped.jpg' class='img-responsive' alt=''>" +
-                            "</a>" +
-                            "<div class='portfolio-caption'>" +
-                                "<h4>" +components[indx] +"</h4>" +
-                                "<p class='text-muted'></p>" +
                             "</div>" +
-                        "</div>";
-                    }
-                </script>
+                            "<img src='img/portfolio/sirena_pimped.jpg' class='img-responsive' alt=''>" +
+                        "</a>" +
+                        "<div class='portfolio-caption'>" +
+                            "<h4>" +components[indx] +"</h4>" +
+                            "<p class='text-muted'></p>" +
+                        "</div>" +
+                    "</div>";
+                }
+            </script>
 
+
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="FAQ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">FAQ</h2>
+                    <h3 class="section-subheading text-muted">Una raccolta delle domande che ci vengono poste più frequentemente.</h3>
+                </div>
             </div>
+            <div class="row text-center">
+                <div class="col-md-12">
+
+                <div id="accordionFAQ" class="panel-group">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse1">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse1">Il luogo che vorrei proteggere non ha nessuna predisposizione prevista.<br/>È un problema?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    No, questo ora non è più un problema, anzi. La tecnologia wireless, via radio, permette di posizionare sensori, sirene e centrale ove si preferisce senza preoccuparsi di scomodi cablaggi senza per questo limitare in alcun modo le funzioni necessarie al sistema d'allarme, ormai la tecnologia via radio permette di realizzare tutto quello che ieri era riservato solo al cablato.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse2">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse2">Un sistema d'allarme senza fili costa come un sistema cablato?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Si. Seppure l'elettronica via radio abbia costi più elevati rispetto i componenti di un sistema via filo (ogni sensore contiene un trasmettitore per comunicare con la centrale), utilizzando sistemi via radio si risparmiano però il costo del cablaggio e della manodopera necessaria per l'installazione. Solitamente per un installare un sistema cablato il passaggio dei cavi richiede almeno due persone, un sistema senza fili non ha queste necessità e si installa molto più velocemente, in sostanza i costi finali non hanno differenze.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse3">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse3">Come posso sapere quando un sensore ha la batteria scarica?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse3" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    La centrale provvede a segnalare la presenza di batterie scariche nei sensori, specificando anche il nome del sensore; in caso di presenza di combinatore telefonico GSM, arriverà un messaggio sul cellulare che specificherà inequivocabilmente in quale sensore occorre la nuova batteria. Dal momento della comunicazione, ho c.ca un mese per provvedere alla sostituzione.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse4">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse4">Che autonomia hanno le batterie dei sensori senza fili?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse4" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Le batterie utilizzate dai nostri sistemi d'allarme sono tutte alcaline, di formato standard, quindi di bassissimo costo e facile reperibilità (centri commerciali o normali negozi); rispetto le batterie litio utilizzate da alcune aziende, hanno effettivamente una durata inferiore, ma anche costi molto inferiori. Il consumo della batteria è dovuto all'intensità d'uso del sensore, normalmente un sensore apertura montato su di uno scuro/finestra ha una durata di c.ca due anni, la batteria di un sensore volumetrico ad infrarossi posizionato all'interno di un negozio o in un soggiorno trafficato e quindi molto sollecitato, può avere un'autonomia di un anno e mezzo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse5">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse5">Come si accende un vostro sistema d'allarme?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse5" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    L'attivazione dei nostri sistemi d'allarme avviene tramite radiocomando, tastiera via radio o chiave elettronica; indubbiamente il radiocomando rimane sempre il sistema più pratico e semplice da usare. Il raggio d'azione del radiocomando è normalmente tale da permettere l'inserimento/disinserimento del sistema, sin dall'esterno della zona protetta. Se l'impianto è dotato di combinatore telefonico, da qualsiasi parte del mondo, è possibile inserire o disinserire parzialmente o totalmente il sistema d'allarme tramite una semplice telefonata, agendo poi sulla tastiera stessa del telefono chiamante.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse6">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse6">Che tempi di garanzia hanno i vostri sistemi d'allarme?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse6" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Come tutti i prodotti in commercio, anche i nostri sistemi d'allarme prevedono una garanzia di 24 mesi, con sostituzione degli eventuali componenti dovessero risultare difettosi dalla fabbricazione.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse7">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse7">Vorrei proteggere una finestra che però rimane sempre aperta, è possibile?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse7" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Certamente si!  Abbiamo disponibili vari tipi di sensori utili a proteggere porte e finestre dal loro attraversamento, variano fra loro differenziandosi dal tipo di protezione offerta e quindi anche dal conseguente costo.  Potremo valutare, durante un eventuale sopralluogo, quale più idoneo al specifico utilizzo.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse8">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse8">Installando un sistema d'allarme, troverò poi difficoltà durante la permanenza nell'abitazione?<br/> Potrò attivare il sistema, mentre sono in casa?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse8" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Certamente! La sicurezza delle persone mentre abitano la casa è fondamentale, basterà realizzare il sistema d'allarme prevedendo una protezione perimetrale, quindi su porte e finestre; una volta messe in sicurezza tutte le aperture verso l'esterno, si potrà circolare tranquillamente in ogni ambiente; solo la manomissione di porte esterne e finestre provocherà allarme. Volendo inserire nell'impianto anche gli utilissimi sensori infrarossi da interno, si otterrà così anche un rilevamento di movimento all'interno della casa, tramite un apposito tasto dal radiocomando, si deciderà se attivarli o no assieme al perimetrale; solitamente questi sensori si attivano solo quando la casa rimane vuota.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse9">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse9">Ho la casa circondata dal cortile con piante e cespugli, vorrei essere avvisato se qualcuno vi si aggira, è possibile?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse9" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Disponiamo di vari tipi di sensori da esterno, atti a rilevare il movimento attorno al perimetro dell'abitazione fino ad una distanza di c.ca 10 metri, attivando la protezione antiaggressione. Tramite questi sensori, il sistema antiaggressione, al rilevamento di movimento, attiva un segnale sonoro udibile sia dalla sirena esterna e dalla centrale all'interno della abitazione, questo segnale all'esterno può essere di bassa intensità con un "beeep" ripetuto per tre minuti, oppure di allarme generale con la sirena ad alto volume, dipende dalla programmazione che si darà ala centrale.  Anche il segnale bassa intensità ottiene comunque un ottimo effetto deterrenza, avvisando il malintenzionato d'essere già stato rilevato, facendo così cadere l'indispensabile effetto sorpresa e spingendolo ad andarsene.   Dalla sirena esterna, anziché il segnale bassa intensità, potremmo udire un messaggio vocale (registrabile) grazie all'utilizzo di un'apposita scheda vocale, in questo caso l'effetto deterrenza sarà ancor maggiore.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse10">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse10">I sensori del sistema antiaggressione esterno sono disturbati dal passaggio di animali?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse10" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    No. I sensori da noi utilizzati all'esterno non vengono attivati dalla presenza di animali sia a terra che in volo, la discriminazione dalla presenza di un umano, viene effettuata tramite particolari elettroniche proprie dei sensori stessi, oppure tramite particolari procedure d'installazione. Un'attivazione impropria degli allarmi, renderebbe inutile l'utilizzo di un sistema antiaggressione.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#collapse11">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" href="#collapse11">Come posso essere avvisato quando scatta l'allarme e non sono a casa?</a>
+                            </h4>
+                        </div>
+                        <div id="collapse11" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <p>
+                                    Il compito di avvisare dell'attivazione dell'allarme, spetta al combinatore telefonico. Le centrali da noi utilizzate, nelle versioni specifiche, già comprendono al loro interno questo accessorio. Il combinatore telefonico può essere via PSTN, cioè trasmetterà tramite i cavi di rete fissa Telecom, oppure tramite un segnale GSM, uguale a quello utilizzato dai nostri comuni cellulari. in questo caso, oltre ai messaggi vocali, riceveremo anche messaggi sms, con l'indicazione specifica del sensore che ha fatto innescare l'allarme. Tramite sms si avranno anche tutta una serie di comunicazioni utili per la manutenzione dell'impianto, ad esempio l'avviso di eventuali batterie scariche o la mancanza di corrente elettrica.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>                    
+            </div>
+
         </div>
     </section>
 
@@ -330,7 +515,7 @@
         </div>
     </div>
 
-    <div class="portfolio-modal modal fade" id="RadiocomandiModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="RadiocomandietastiereModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -342,7 +527,9 @@
                 <div class="row">
                     <div class="modal-body">
                         <div class="col-lg-8 col-lg-offset-2">
-                            <h2>Radiocomandi DualBand</h2>
+                            <h2>Radiocomandi</h2>
+                            <h2>e</h2>
+                            <h2>tastiere</h2>
                             <p>
                                 I sistemi di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> possono essere inseriti tramite tastiera e/o radiocomando con attivazione praticamente immediata, il tempo d'ingresso è a zero secondi (salvo diversa programmazione in centrale), questo fa si che appena rilevato il tentativo d'effrazione, il sistema attiva immediatamente la situazione d'allarme.
                             </p>
@@ -354,6 +541,142 @@
                             <p>
                                 I radiocomandi hanno portata solitamente di almeno 30/40 mt. ma non sono escluse distanze molto superiori, questo dipende dalla situazione propria dell'abitazione e dalla composizione delle pareti interne ed esterne.
                                 Tramite tastiera e radiocomando è possibile attivare tramite apposito pulsante anche allarme panico (attivazione immediata sirene e combinatore telefonico) o allarme rapina silenzioso (invio di messaggio da combinatore telefonico senza attivazione sirene) o invio messaggio richiesta aiuto (es.: richiesta sos anziani/disabili).
+                            </p>                            
+                            <br/>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="TrasmettitoritelefoniciModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Trasmettitori telefonici</h2>
+                            <p>
+                                Il trasmettitore telefonico (o combinatore telefonico) è un completamento quasi indispensabile al sistema d'allarme; la sua funzione è di trasmettere telefonicamente messaggi vocali e sms di allarme o anomalia.
+                                <br/>
+                                Grazie alle sue funzioni domotiche il trasmettitore telefonico permette inoltre la verifica a distanza dello stato d'impianto (acceso/spento) consentendo l'inserimento o il disinserimento tramite tastiera del telefono (fisso o cellulare) ed il comando a distanza di apparecchi o luci (condizionatore, impianto irrigazione, ecc..).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                La gamma di trasmettitori proposta da <span class="securconfort-type"><strong>SecurConfort</strong></span> è tra le più vaste del mercato con diversi modelli della produzione Silentron.
+                                <br/>
+                                Alcune nostre centrali, di serie sono già dotate al loro interno del trasmettitore telefonico PSTN (linea fissa) con possibilità d'inserimento del modulo GSM, quindi in un unico box, è possibile avere entrambi gli elementi, facilitando l'installazione e garantendo migliore estetica finale, evitando la presenza di ingombranti apparecchiature aggiuntive.
+                            </p>                            
+                            <br/>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="AccessoriModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Accessori</h2>
+                            <p>
+                                I sistemi di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> possono essere arricchiti o migliorati dall'utilizzo di vari accessori utili per ancor diversi rilevamenti, per migliorare le caratteristiche tecniche del sistema d'allarme o per aggiungere funzioni all'apparato.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                ........................... aggiungere descrizione ....................
+                            </p>                            
+                            <br/>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="AccessoriModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Ripetitori, segnalatori e trasmettitori</h2>
+                            <p>
+                                I sistemi di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> possono essere arricchiti o migliorati dall'utilizzo di vari accessori utili per ancor diversi rilevamenti, per migliorare le caratteristiche tecniche del sistema d'allarme o per aggiungere funzioni all'apparato.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                ........................... aggiungere descrizione ....................
+                            </p>                            
+                            <br/>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="RicevitoriradioModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Ricevitori radio</h2>
+                            <p>
+                                Tra gli accessori per sistemi di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> molto interessante è la parte relativa ai ricevitori radio. si tratta di componenti utili solitamente per integrare nuovi sensori Silentron via radio ad impianti classici via filo già esistenti. E' così possibile aggiungere nuovi particolari (ad esempio sensori esterni per antiaggressione) o nuove funzioni (ad esempio inserimento allarme da radiocomando eliminando la chiave elettronica), aggiornando con spese contenute, impianti datati.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                ........................... aggiungere descrizione ....................
                             </p>                            
                             <br/>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
