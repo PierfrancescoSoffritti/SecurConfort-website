@@ -155,10 +155,10 @@
 
                 <script>
                     var rootElement = document.getElementById("componentsRow");
-                    var components = ["Centrali", "Sirene", "Rivelatori", "Radiocomandi", "Tastiere", "Trasmettitori telefonici", "Accessori", "Ripetitori", "Segnalatori led", "Ricevitori radi", "Varie"];
+                    var components = ["Centrali", "Sirene", "Rivelatori", "Radiocomandi", "Tastiere", "Trasmettitori telefonici", "Accessori", "Ripetitori", "Segnalatori led", "Ricevitori radio"];
                     for(var indx in components) {
                         rootElement.innerHTML += "" +
-                         "<div class='col-md-3 col-sm-4 portfolio-item'>" +
+                         "<div class='col-md-3 col-sm-4 portfolio-item col-xs-6 portfolio-item'>" +
                             "<a href='#" +components[indx] +"Modal' class='portfolio-link' data-toggle='modal'>" +
                                 "<div class='portfolio-hover'>" +
                                     "<div class='portfolio-hover-content'>" +
@@ -209,11 +209,8 @@
         </div>
     </footer>
 
-    <!-- Portfolio Modals -->
-    <!-- Use the modals below to showcase details about your portfolio projects! -->
-
-    <!-- Chi siamo Modal -->
-    <div class="portfolio-modal modal fade" id="chiSiamoModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Modals -->
+    <div class="portfolio-modal modal fade" id="CentraliModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -223,42 +220,27 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Content -->
-                            <h2>Chi siamo e cosa facciamo</h2>
-                            <p><span class="securconfort-type"><strong>SecurConfort</strong></span> si occupa principalmente di sistemi d'allarme via radio e di sicurezza degli ambienti.
-                            Concentrando le nostre conoscenze ed esperienze in questo settore, abbiamo deciso di occuparci a fondo solo di questa specialità, trascurando tutto il mondo dell'impianto elettrico, cancelli automatici e condizionamento.  Siamo in prima linea sul territorio, specialisti nella realizzazione di soluzioni che ci consentano di essere il partner ideale con cui affrontare le sfide tecnologiche di un settore in rapida evoluzione quale quello della sicurezza.</p>
-                            <img class="img-responsive img-centered" src="img/header-temp.jpg" alt="">
-                            <p>Da tempo è avvertita l’esigenza d'utilizzare nuovi sistemi e nuove tecnologie per migliorare la sicurezza delle nostre case e delle persone, creando una efficace barriera fra noi e i rischi divenuti ormai quotidiani.
-
-                            Il crescente allarme sociale per il moltiplicarsi di reati contro la persona ed il patrimonio, ha portato in questi ultimi anni ad un netto incremento della domanda di sistemi di sicurezza. Anche nel nostro paese cresce l’esigenza di una maggior protezione per la casa e la famiglia.</p>
-
-							<p>Da qui è nata la volontà di realizzare <span class="securconfort-type"><strong>SecurConfort</strong></span>, una nuova e dinamica azienda che permetta a tutti d’avvicinarsi alle moderne apparecchiature elettroniche per allarme ed ai vari accessori complementari reperibili sul mercato, <strong>avendo cura di non creare mai difficoltà d'utilizzo all'utente, permettendo così anche ai meno esperti, di rendere sicura la loro casa senza alcun problema nella gestione di complicate apparecchiature.</strong></p>
-
-							<h3>Informazioni sul prodotto</h3>
-
-							<p>I nostri sistemi d'allarme solitamente s'inseriscono tramite radiocomando, utilizziamo esclusivamente elettroniche wireless, senza fili, quindi più semplici e veloci da installare che non creano problemi logistici durante il posizionamento e, in caso di variazione d’impianto, ogni parte è nuovamente riutilizzabile o facilmente sostituibile.   Oggi la tecnologia radio ha raggiunto standard qualitativi incredibili che non fanno davvero rimpiangere i vecchi collegamenti via cavo, anzi molto spesso ne ha superato le caratteristiche, <strong>in particolare la tecnologia senza fili può essere installata in tempi molto più brevi rispetto ai convenzionali sistemi a filo e, cosa importante, senza danneggiare o modificare le strutture della casa.</strong></p>
-
-							<p><strong>Semplicità d'utilizzo, velocità d'installazione, nessun cablaggio ed elevata affidabilità nel tempo</strong>, sono le caratteristiche principali delle nostre apparecchiature.  Queste peculiarità ci hanno avvicinato in particolar modo alle abitazione private, piccoli/medi locali commerciali, capannoni fino a medie dimensioni, <strong>offrendo ai nostri clienti sempre miglior la soluzione al minor costo possibile.</strong></p>
-
-							<h4>Chiamaci, anche solo per una <strong>consulenza gratuita</strong> o un sopralluogo, assieme a te valuteremo le soluzioni  adatte, sia interne che esterne, per proteggere il tuo ambiente, un servizio offerto da senza alcun impegno o spesa da parte tua.</h4>
-
-							<br/>
-
-							<ul class="list-inline">
-                                <li>Massimo</li>
-                                <li>-</li>
-                                <li>348 8715859</li>
-                                <li>-</li>
-                                <li>info@securconfort.it</li>
-
-                                <br/><br/>
-                                <li><a class="page-scroll" href="#contact" data-dismiss="modal">Oppure contattaci tramite il sito.</a></li>
-                            </ul>
-
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Centrali</h2>
+                            <p>
+                                La centrale in un sistema d'allarme è il cuore dell'impianto, raccoglie tutti i segnali dai vari sensori, organizza e gestisce le situazioni d'allarme attuando i relativi interventi.
+                                Le elettroniche delle centrali possono essere alimentate dalla rete 220Volt, oppure funzionare completamente a batteria, quest'utimo caso è particolarmente utile in situazioni dove può mancare la corrente elettrica (case vacanza, garage, roulotte, camper, barche, ecc,,).
+                                Le centrali più avanzate dispongono di sistemi di controllo approfondito verso tutti i sensori verificandone in continuo il buon funzionamento, lo stato delle batterie, eventuali tentativi di manomissione avvisando prontamente l'utente di anomalie o della scomparsa del loro segnale radio.
+                                La centrale comunica a distanza con l'utente tramite il combinatore telefonico che può essere via cavo (PSTN) sulla rete fissa di casa, oppure via GSM, in quest'ultimo caso è possibile avere oltre ai messaggi vocali, anche una serie di messaggi sms d'allarme e tecnici che avvisano quindi di tutti gli eventuali allarmi, ed anche di eventuali anomalie nei sensori e nella centrale, batterie scariche, mancanza di corrente elettrica, ecc.ecc..
+                                Le centrali provviste di combinatore telefonico, hanno anche funzioni domotiche, possono essere inserite o disinserite e verificate a distanza, ovunque, dalla tastiera di un qualsiasi telefono, anche tramite GSM, ricevendo messaggi di conferma avvenuta operazione, è possibile variare i numeri telefonici per le chiamate in caso d'allarme programmati  in rubrica, è possibile comandare a distanza eventuali carichi elettrici come un condizionatore, l'impianto d'irrigazione, le luci di casa, tapparelle elettriche ecc..ecc.. ad esempio per simulare la presenza in casa anche quando si è lontani, accendendo spegnendo luci o chiudendo e aprendo tapparelle elettriche.                                
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                Le centrali proposte da <span class="securconfort-type"><strong>SecurConfort</strong></span>, tutte senza fili, sono il massimo dell'espressione dell'elettronica di sicurezza aperta alla domotica, per realizzare sistemi d'allarme altamente professionali con possibilità di particolare funzione per la gestione di rivelatori in esterni (utili per controllare cortili, porticati, camminatoi, ecc..ecc..) e conseguente pre-allarme antiaggressione, il massimo della deterrenza oggi disponibile.   Le nostre centrali ed i sensori, di vari prezzi e caratteristiche, trasmettono tutti segnali Dual Band, cioè due segnali radio diversi comunicano in contemporanea in tutto l'impianto, questo garantisce la certezza di dialogo fra le varie parti dell'allarme eliminando ogni ipotesi di disturbo.
+                                Le centrali utilizzate da Securconfort, nei modelli più avanzati provvedono autonomamente alla verifica del buon funzionamento dell'intero impianto (dalla centrale, ai sensori fino alle sirene), effettuando continui test periodici ed avvisando prontamente l'utente della necessità di manutenzione, indicando specificatamente esattamente su quale elemento intervenire, evitando così i lunghi tempi di ricerca d'eventuali anomalie.  Esiste anche possibilità di telegestione, cioè un collegamento diretto telefonico con <span class="securconfort-type"><strong>SecurConfort</strong></span>, permette la verifica a distanza di anomalie, con possibilità immediata d'intervento, anticipando la presenza sul posto di un tecnico.
+                                Semplice e comodo l'utilizzo della tastiera di bordo per il comando di tutte le funzioni, display retroilluminato, estrema flessibilità, facile gestione e controllo del sistema d'allarme grazie anche alla memoria storica degli ultimi 200 eventi.
+                            </p>                            
                             <br/>
-
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
                         </div>
                     </div>
@@ -267,8 +249,7 @@
         </div>
     </div>
 
-    <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="allarmiSenzaFiliModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="SireneModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -278,23 +259,103 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Sistemi d'allarme senza fili</h2>
-                            <p class="item-intro text-muted">La necessità di protezione è aumentata perchè è aumentata la vulnerabilità; ambiente, società, stili di vita, possibilità e tipi di rischio mutano rapidamente.</p>
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Sirene</h2>
+                            <p>
+                                Le sirene sono il mezzo di segnalazione sonora e visiva del sistema d'allarme.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
                             <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
-                            <p><span class="securconfort-type"><strong>SecurConfort</strong></span> ha come riferimento il futuro ed è cosciente della richiesta di sicurezza sempre più mirata ed efficace per le abitazioni dei propri clienti.
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                Le proposte di <span class="securconfort-type"><strong>SecurConfort</strong></span> comprendono diversi modelli di vario prezzo e caratteristiche, possono essere aggiunte in numero indefinito, sia per interno che per esterno. La sirena esterna compie anche funzione di dissuasione segnalando visivamente all'esterno la presenza del sistema d'allarme; la sirena interna ha invece la funzione di creare panico grazie all'elevata potenza sonora. La sirena esterna, ha protezione antischiuma, allarme da manomissione (distacco da parete o apertura coperchio) e protezione vibrazione se sottoposta a forti colpi, il modello di punta, in caso di tentata manomissione, oltre a suonare, attiva anche tutto l'allarme generale, funzionando come sensore antiaggressione è possibile inserire modulo di sintesi vocale per emettere anche messaggio vocale registrabile.
+                                Per migliorare le caratteristiche tecniche del sistema d'allarme, il numero delle sirene va calcolato in base alla disposizione del locale da proteggere e del tipo di sistema d'allarme.             
+                                Tutte le sirene proposte da <span class="securconfort-type"><strong>SecurConfort</strong></span> sono a norma di legge, con funzionamento regolato secondo le norme vigenti, questo è necessario per evitare denunce per disturbo della quiete pubblica o schiamazzi.
+                            </p>                            
                             <br/>
-                            Per questo motivo abbiamo scelto, fra tanti, il prodotto e l'azienda che più sono parsi confacenti alla clientela a cui vogliamo rivolgerci: .....le famiglie, piccoli/medi negozi e piccoli artigiani, così da anni è nato lo stretto rapporto con <strong>Silentron s.p.a.</strong> di Torino.</p>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            <p><strong>Silentron s.p.a., oggi fra le prime aziende in Italia del suo settore</strong>, forte di <strong>30 anni d'esperienza nell'allarme senza fili</strong>, produce apparati evoluti, duraturi e dinamici, permettendo con i suoi tanti accessori una realizzazione su misura e più appropriata alle vostre attuali e future necessità reali di protezione.
+    <div class="portfolio-modal modal fade" id="RivelatoriModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Rivelatori via radio DualBand</h2>
+                            <p>
+                                I rivelatori servono per controllare la chiusura di porte e finestre, segnalare alla centrale del sistema movimenti o attraversamenti di determinati spazi (porte, finestre, stanze, corridoi, ecc..ecc..) e verifica eventi anomali (incendio, allagamento, ecc...).
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                I rivelatori possono avere:
+                                <ul>
+                                    <li><strong>protezione volumetrica</strong> con il compito di verificare la presenza di persone in spazi ampi (sensori infrarossi o microonde) segnalando movimenti ove non dovrebbero esserci.</li>
+                                    <li><strong>controllo apertura/chiusura</strong> con il compito di segnalare l'apertura di porte o finestre (contatti magnetici e sensore tapparella).</li>
+                                    <li><strong>controllo attraversamento spazi</strong> con il compito di segnalare l'avvenuto attraversamento di precisi spazi di cui è stato predisposto il controllo, come vani porte/finestra, corridoi, perimetro porticati, lucernari, ecc.. (sensori infrarossi tenda e barriere a raggi).</li>
+                                    <li><strong>protezione percussione</strong> con il compito di segnalare la presenza di vibrazioni anomale, come tentativi di sfondamento vetrate, porte o pareti (sensori vibrazione).</li>
+                                    <li><strong>controllo presenza acqua</strong> con un sensore apposito che 24 ore su 24, ad allarme inserito o disinserito, ha il compito d'avvisare l'utente di eventuale presenza d'acqua in punti precisi, utile per controllo scantinati, garage seminterrati, fuoriuscite acqua da lavatrici e lavastoviglie ecc... (sensore via radio)</li>
+                                    <li><strong>controllo presenza fumo</strong> con un sensore apposito che 24 ore su 24, ad allarme inserito o disinserito, ha il compito d'avvisare l'utente di eventuale presenza fumo negli ambienti in cui posizionato. Posizionabile a soffitto è utile per segnalare la presenza d'incendio negli ambienti (sensore via radio).</li>
+                                </ul>
+                                <br/>
+                                <strong>Merita una nota a parte la protezione antiaggressione esterna</strong> che permette la segnalazione di movimenti all'esterno, ad esempio in cortile o su un terrazzo, creando il <strong>massimo dell'effetto deterrenza</strong> disturbando il malintenzionato già mentre compie la perlustrazione prima di tentare l'ingresso nell'abitazione. Le nostre migliori centrali in questi casi emettono un <strong>segnale a bassa intensità</strong> udibile all'interno ed anche all'esterno tramite le sirene. Questa rilevazione viene effettuata tramite appositi sensori da esterno, infrarossi o microonde, studiati per lavorare in condizioni estreme e quindi impermeabili ed ad alta affidabilità contro allarmi impropri. Ovviamente, tramite appositi sensori o particolari metodi d'installazione vi è l'opportunità di non rilevare il passaggio di cani, gatti, volatili o altri animali.
+                            </p>
+                            <p>
+                                I rivelatori di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> sono compatibili con i ricevitori e le centrali da noi utilizzati. Tutti i nostri rivelatori trasmettono in doppia frequenza DualBand garantendo il massimo dell'affidabilità nella comunicazione con la centrale.  Sono tutti alimentati da batterie di facile reperibilità sul normale mercato e quindi di costo contenuto; solitamente viene superata l'autonomia di due anni, ma questo periodo può variare secondo le sollecitazioni a cui il sensore è sottoposto, non è raro trovare sensori con autonomie anche di cinque/sei anni.
+                            </p>                            
                             <br/>
-                            Con estetiche molto semplici ed essenziali, le apparecchiature di <strong>Silentron</strong>, sono realizzate per essere usate con estrema facilità, senza per questo mancare di caratteristiche e funzioni.</p>
-                            
-                            <br/>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-                            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-search"></i> Dettagli prodotto</button>
+    <div class="portfolio-modal modal fade" id="RadiocomandiModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="modal-body">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <h2>Radiocomandi DualBand</h2>
+                            <p>
+                                I sistemi di allarme proposti da <span class="securconfort-type"><strong>SecurConfort</strong></span> possono essere inseriti tramite tastiera e/o radiocomando con attivazione praticamente immediata, il tempo d'ingresso è a zero secondi (salvo diversa programmazione in centrale), questo fa si che appena rilevato il tentativo d'effrazione, il sistema attiva immediatamente la situazione d'allarme.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-lg-offset-4">
+                            <img class="img-responsive img-centered" src="img/portfolio/sirena_pimped.jpg" alt="">
+                        </div>
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <p>
+                                I radiocomandi hanno portata solitamente di almeno 30/40 mt. ma non sono escluse distanze molto superiori, questo dipende dalla situazione propria dell'abitazione e dalla composizione delle pareti interne ed esterne.
+                                Tramite tastiera e radiocomando è possibile attivare tramite apposito pulsante anche allarme panico (attivazione immediata sirene e combinatore telefonico) o allarme rapina silenzioso (invio di messaggio da combinatore telefonico senza attivazione sirene) o invio messaggio richiesta aiuto (es.: richiesta sos anziani/disabili).
+                            </p>                            
+                            <br/>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Chiudi</button>
                         </div>
                     </div>
