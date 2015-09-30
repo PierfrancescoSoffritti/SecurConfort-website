@@ -21,6 +21,7 @@ $email_subject = "Email dal sito web inviata da:  $name";
 $email_body = "Hai ricevuto un messaggio tramite il tuo sito web.\n\n"."Dettagli:\n\nNome: $name\n\nEmail: $email_address\n\nTelefono: $phone\n\nMessaggio:\n$message";
 $headers = "From: noreply@securconfort.it\n"; // This is the email address the generated message will be from. We recommend using something like noreply@yourdomain.com.
 $headers .= "Reply-To: $email_address";	
-mail($to,$email_subject,$email_body,$headers);
+
+@mail($to,$email_subject,$email_body,$headers);
 return true;			
 ?>

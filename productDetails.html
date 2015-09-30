@@ -67,17 +67,6 @@
     })(window,document,'script','dataLayer','GTM-PKDNBX');</script>
     <!-- End Google Tag Manager -->
 
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-50551684-2', 'auto');
-      ga('send', 'pageview');
-
-    </script>
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -181,14 +170,13 @@
                 for(var indx in components) {
                     rootElement.innerHTML += "" +
                      "<div class='col-md-3 col-sm-4 products-item col-xs-6 products-item'>" +
-                        //"<a href='#" +components[indx].replace(/\s+/g, '') +"Modal' class='products-link' data-toggle='modal'>" +
-                        "<a href='modals/" +components[indx].replace(/\s+/g, '') +"Modal.html'' class='products-link'>" +
+                        "<a href='modals/" +components[indx].replace(/\s+/g, '') +"Modal.html'' class='products-link' style='background-color: #ffffff;'>" +
                             "<div class='products-hover'>" +
                                 "<div class='products-hover-content'>" +
                                     "<i class='fa fa-plus fa-3x'></i>" +
                                 "</div>" +
                             "</div>" +
-                            "<img src='img/products/sirena_pimped.jpg' class='img-responsive' alt=''>" +
+                            "<img src='img/products/" +components[indx].replace(/\s+/g, '') +".jpg' style='margin: auto;' class='img-responsive' alt=''>" +
                         "</a>" +
                         "<div class='products-caption'>" +
                             "<h4>" +components[indx] +"</h4>" +

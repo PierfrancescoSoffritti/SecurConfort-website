@@ -53,6 +53,14 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <!-- Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent -->
+    <script type="text/javascript">
+        window.cookieconsent_options = {"message":"Questo sito usa cookies da parte di Google per migliorare il servizio e analizzare il traffico. Informazioni riguardo l'uso di questo sito sono condivise con Google in forma anonima. Utilizzando questo sito acconsenti al suo uso dei cookies.","dismiss":"OK","learnMore":"Maggiori informazioni","link":"https://www.google.com/policies/technologies/cookies/","theme":"dark-bottom"};
+    </script>
+
+    <script type="text/javascript" src="//s3.amazonaws.com/cc.silktide.com/cookieconsent.latest.min.js"></script>
+    <!-- End Cookie Consent plugin -->
+
 </head>
 
 <body id="page-top" class="index">
@@ -66,17 +74,6 @@
     '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-PKDNBX');</script>
     <!-- End Google Tag Manager -->
-
-	<script>
-	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-	  ga('create', 'UA-50551684-2', 'auto');
-	  ga('send', 'pageview');
-
-	</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -224,9 +221,9 @@
                     <script>
                         var rootElement = document.getElementById("timeline");
 
-                        var dates = [ "date1", "date2", "date3" ];
-                        var titles = [ "title1", "title2", "title3" ];
-                        var bodies = [ "body1", "body2", "body3" ];
+                        var dates = [ "30-09-2015"];
+                        var titles = [ "SecurConfort ha un nuovo sito", "title2", "title3" ];
+                        var bodies = [ "Sebbene SecurConfort sia sul web da anni, ora il sito ha un nuovo aspetto più professionale e al passo con i tempi. Il sito è realizzato seguendo principi di responsive design, garantendo quindi la migliore esperienza di navigazione su qulunque dispositivo.", "body2", "body3" ];
 
                         for(var i=0; i<dates.length; i++) {
 
@@ -294,7 +291,7 @@
                     <li>info@securconfort.it</li>
 
                     <br/><br/>
-                    <li><a class="page-scroll" href="#contact" data-dismiss="modal">Oppure contattaci tramite il sito.</a></li>
+                    <!--<li><a class="page-scroll" href="#contact" data-dismiss="modal">Oppure contattaci tramite il sito.</a></li>-->
                 </ul>
             	</div>
             </div>
@@ -333,11 +330,13 @@
                     <li>-</li>
                     <li>info@securconfort.it</li>
                     <br/><br/>
-                    <li>Oppure utilizza il form sottostante</li>
+                    <!--<li>Oppure utilizza il form sottostante</li>-->
                 </ul>
                 <br/>
             	</div>
             </div>
+
+            <!--
             <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
@@ -371,6 +370,7 @@
                     </form>
                 </div>
             </div>
+            -->
         </div>
     </section>
 
@@ -394,10 +394,8 @@
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline quicklinks">
-                        <li><a href="#">Privacy Policy</a>
-                        </li>
-                        <li><a href="#">Terms of Use</a>
-                        </li>
+                        <!--<li><a href="#">Privacy Policy</a></li>-->
+                        <!--<li><a href="#">Terms of Use</a></li>-->
                     </ul>
                 </div>
             </div>
@@ -416,8 +414,8 @@
                 </div>
             </div>
             <div class="container">
-                <div class="row">
-                	<div class="modal-body">
+                <div class="modal-body">
+                    <div class="row">
                         <div class="col-lg-8 col-lg-offset-2">
                             <!-- Content -->
                             <h2>Chi siamo e cosa facciamo</h2>
@@ -441,13 +439,17 @@
 							<br/>
 						</div>
 
-						<div class="col-lg-8 col-lg-offset-5">
+                    </div>
+
+                    <div class="row">
+						<div class="col-xs-10 col-md-offset-5 col-sm-offset-5 col-xs-offset-2">
 							<div class='img-circle img-responsive' style="border-radius: 360px; border: 6px solid #D7D7D7; padding: 0px; width: 150px; height: 150px;">
 								<img class='img-circle img-responsive' src='img/news/1.jpg' alt=''>
 							</div>
 						</div>
+                    </div>
 
-
+                    <div class="row">
 						<div class="col-lg-8 col-lg-offset-2">
 							<br/>
 
@@ -459,7 +461,7 @@
                                 <li>info@securconfort.it</li>
 
                                 <br/><br/>
-                                <li><a class="page-scroll" href="#contact" data-dismiss="modal">Oppure contattaci tramite il sito.</a></li>
+                                <!--<li><a class="page-scroll" href="#contact" data-dismiss="modal">Oppure contattaci tramite il sito.</a></li>-->
                             </ul>
 
                             <br/>
